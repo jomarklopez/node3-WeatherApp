@@ -1,12 +1,6 @@
-console.log('Client side javascript is loaded!')
-
-
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const forecastRender = document.querySelector('#forecast')
-
 const locationRender = document.querySelector('#location')
 
 // Clears the content of the search field, and the message paragraphs
