@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
     clear()
 
     // Render loading
-    forecastRender.insertAdjacentHTML('afterbegin', `Loading...`)
+    forecastRender.insertAdjacentHTML('afterbegin', `Loading....`)
 
     fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
         response.json().then(data => {
