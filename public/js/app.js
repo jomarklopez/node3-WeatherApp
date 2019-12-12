@@ -27,7 +27,8 @@ weatherForm.addEventListener('submit', (e) => {
                 clear()
                 forecastRender.insertAdjacentHTML('afterbegin', `${data.error}`)
             } else {
-                // Render the results
+                // Render the results 
+                forecastRender.textContent = ''
                 locationRender.insertAdjacentHTML('afterbegin', `Location: ${data.location}`)
                 forecastRender.insertAdjacentHTML('afterbegin', `Weather forecast for today is:\n${data.forecast}`)
             }
