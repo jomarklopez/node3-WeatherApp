@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
     // Render loading
     forecastRender.insertAdjacentHTML('afterbegin', `Loading....`)
 
-    fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
+    fetch(`/weather?address=${location}`).then(response => {
         response.json().then(data => {
             // Render error if there is one
             if (data.error) {
